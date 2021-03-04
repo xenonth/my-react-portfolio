@@ -9,6 +9,7 @@ import Home from './pages/Home';
 
 //components which sit outside the main page
 import Header from './components/Header';
+import Footer from './components/SocialLinks'
 
 
 
@@ -21,7 +22,7 @@ function App() {
       <Header />
         <Route exact path ="/" component={Home} />
         <Route exact path ="/home" component={Home} />
-
+      <Footer />
     </Router>
   );
 }
