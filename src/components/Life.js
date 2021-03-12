@@ -1,7 +1,7 @@
 import React from 'react';
 
-//import Dream string statement from text file
-import DreamText from './text/DreamText';
+//import Life string statement from text file
+import LifeText from './text/LifeText';
 
 //import material UI components for formatting as necessary
 import Paper from '@material-ui/core/Paper'
@@ -20,18 +20,18 @@ const useStyles = makeStyles(() => ({
 }))
 
 
-function Dream() {
+function Life() {
     const classes = useStyles();
 
     return (
        <Paper className={classes.root}>
            <h3>
-           My Dream
+           Life Experience
            </h3>
 
-           <DreamText />
+           <LifeText />
        </Paper> 
     )
 }
 
-export default Dream;
+export default Life;
