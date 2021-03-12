@@ -48,7 +48,7 @@ drawerContainer: {
 function Header() {
   
   //css styles for header
-  const {header, d20, menuButton, toolbar, drawerContainer} = useStyles();
+  const {header, menuButton, toolbar, drawerContainer} = useStyles();
   
   const [state, setState] = useState({
     mobileView: false,

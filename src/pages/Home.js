@@ -1,9 +1,16 @@
-import react from 'react';
+import React from 'react';
+
+//import who I am statements for home webpage
+import Intro from '../components/Intro';
+
+import Dream from '../components/Intro';
 
 function Home() {
     return (
         <div>
-            <h2>Welcome User</h2>
+            <Intro />
+            <br></br>
+            <Dream />
         </div>
     )
 }
