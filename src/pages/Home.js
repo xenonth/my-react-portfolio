@@ -7,12 +7,16 @@ import Dream from '../components/Dream';
 
 import Life from '../components/Life';
 
+//social Link and Resume buttons to be placed on side above md, and at bottom below md
+import SideFooter from '../components/Side-Footer';
+
 //import material UI components
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper';
 
 //material UI styling
 import {makeStyles} from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -46,7 +50,9 @@ function Home() {
                 </Paper>
             </Grid>
 
-            <Grid item md={2}></Grid>
+            <Grid item md={2}>
+                <SideFooter />
+            </Grid>
         
         </Grid>
     )

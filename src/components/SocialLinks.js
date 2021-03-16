@@ -9,51 +9,28 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons';
 // material UI Box component
 import  Box from '@material-ui/core/Box'
 
-
-//useStyles for footer background to remain at the bottom
-import {makeStyles} from "@material-ui/core/styles"
-
-const useStyles = makeStyles(() => ({
-    root: {
-        background: "#6cf",
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: "center",
-    },
-    iconClass: {
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: "center",
-    }
-
-}));
-
-
-
-
 function SocialLinks() {
-    const classes = {useStyles};
     
   return (
-        <section className={classes.root}> 
+        <div> 
             <Box component="p" m={1} display="inline">
                 <a href="https://www.facebook.com/timothy.forbes.50" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} className={classes.iconClass}/>
+                    <FontAwesomeIcon icon={faFacebook} />
                 </a>
             </Box>
             
             <Box component="p" m={1} display="inline">
                 <a href="https://www.linkedin.com/in/timothy-forbes-260711b9/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} className={classes.iconClass}/>
+                    <FontAwesomeIcon icon={faLinkedin} />
                 </a>
             </Box>
 
             <Box component="p" m={1} display="inline">
                 <a href="https://github.com/xenonth"target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} className={classes.iconClass}/>
+                    <FontAwesomeIcon icon={faGithub} />
                 </a>
             </Box>
-        </section>
+        </div>
   );
 }
 
