@@ -2,7 +2,7 @@ import react from 'react';
 
 //Material UI components
 import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
+
 
 //import social links.
 import SocialLinks from './SocialLinks';
@@ -17,12 +17,6 @@ const useStyles = makeStyles(() => ({
         height: "100px",
         
     },
-    paper: {
-        background: "#6cf",
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: "center",
-    },
 
 }));
 
@@ -30,10 +24,12 @@ function Footer() {
     const classes = {useStyles};
 
     return (
-        <Grid className={classes.root} item xs={12}>
-            <Paper className = {classes.paper}>
+        <Grid container>
+            <Grid>
+            
                 <SocialLinks/>
-            </Paper>
+            </Grid>
+
         </Grid>
     )
 }
