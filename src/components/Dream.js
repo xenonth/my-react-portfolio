@@ -16,6 +16,9 @@ const useStyles = makeStyles(() => ({
     },
     space: {
         margin: "1%",
+    },
+    header: {
+        textAlign: "center",
     }
 }))
 
@@ -25,11 +28,11 @@ function Dream() {
 
     return (
        <Paper className={classes.root}>
-           <h3>
+           <h3 className={classes.header}>
            My Dream
            </h3>
 
-           <DreamText />
+           <DreamText className={classes.space}/>
        </Paper> 
     )
 }

@@ -7,19 +7,28 @@ import Dream from '../components/Dream';
 
 import Life from '../components/Life';
 
+//import material UI components
+import Grid from '@material-ui/core/Grid'
+
 function Home() {
     return (
-        <div>
-            <Intro />
+        <Grid container>
+            <Grid>
+                <Intro />
+            </Grid>
             
-            <br></br>
             
-            <Dream />
             
-            <br></br>
+            <Grid>
+                <Dream />
+            </Grid>
+            
+            
 
-            <Life />
-        </div>
+            <Grid>
+                <Life />
+            </Grid>
+        </Grid>
     )
 }
 

@@ -16,6 +16,9 @@ const useStyles = makeStyles(() => ({
     },
     space: {
         margin: "1%",
+    },
+    header: {
+        textAlign: "center",
     }
 }))
 
@@ -25,11 +28,11 @@ function Life() {
 
     return (
        <Paper className={classes.root}>
-           <h3>
+           <h3 className={classes.header}>
            Life Experience
            </h3>
 
-           <LifeText />
+           <LifeText className={classes.space}/>
        </Paper> 
     )
 }

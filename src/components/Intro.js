@@ -13,9 +13,11 @@ const useStyles = makeStyles(() => ({
         background: "black",
         color: "white",
         
+        
     },
-    space: {
-        margin: "1%",
+
+    header: {
+        textAlign: "center",
     }
 }))
 
@@ -25,7 +27,7 @@ function Intro() {
 
     return (
        <Paper className={classes.root}>
-           <h3>
+           <h3 className={classes.header}>
            There are some who call me...Tim
            </h3>
 
