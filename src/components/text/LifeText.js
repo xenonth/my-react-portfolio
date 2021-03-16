@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box'
 
 function LifeText() {
     return (
-        <Box component="p" p={1}>
+        <Box component="article" p={1}>
             IT technical experience includes:
             <ul> 
                 <li>
