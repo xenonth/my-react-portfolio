@@ -6,12 +6,14 @@ import SocialLinks from './SocialLinks';
 import DownloadResume from './DownloadResume';
 
 //useStyles for footer background to remain at the bottom
+import Box from '@material-ui/core/Box';
+
 import {makeStyles} from "@material-ui/core/styles"
 
 const useStyles = makeStyles(() => ({
     root: {
-        display: 'flex',
-        justifyContent: 'center',
+        textAlign: 'center',
+        width: '100vw'
     },
 
 }));
@@ -20,10 +22,12 @@ function SideFooter() {
     const classes = useStyles();
 
     return (
-            <div className={classes.root} >
+            <footer className={classes.root} >
                 <SocialLinks />
-                <DownloadResume />
-            </div>
+                <Box p={1}>
+                    <DownloadResume />
+                </Box>
+            </footer>
     )
 }
 

@@ -11,8 +11,9 @@ import Life from '../components/Life';
 import SideFooter from '../components/Side-Footer';
 
 //import material UI components
-import Grid from '@material-ui/core/Grid'
+import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
 
 //material UI styling
 import {makeStyles} from '@material-ui/core/styles';
@@ -32,7 +33,7 @@ function Home() {
         <Grid container>
             <Grid item md={1}></Grid>
 
-            <Grid item md={9}>
+            <Grid item md={10}>
                 <Paper className={classes.root}>
                     <Intro />
                 </Paper>
@@ -49,11 +50,11 @@ function Home() {
                     <Life />
                 </Paper>
             </Grid>
-
-            <Grid item md={2}>
+            <Grid item md={1}></Grid>
+            
+            <Box p={1}>
                 <SideFooter />
-            </Grid>
-        
+            </Box>
         </Grid>
     )
 }

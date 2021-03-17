@@ -22,7 +22,7 @@ function Life() {
     return (
         <div>
            <h3 className={classes.header}>
-           Life Experience
+           Skills:
            </h3>
 
            <LifeText className={classes.space}/>
