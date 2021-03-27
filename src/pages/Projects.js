@@ -33,16 +33,62 @@ function Projects () {
 
 
     return (
-        <Grid container="fluid">
-            <ProjectCard className={classes.root}
-                pic={projectData.rpgIdeator.picture}
-                title={projectData.rpgIdeator.heading}
-                projectName={projectData.rpgIdeator.projectTitle}
-                description={projectData.rpgIdeator.description}
-                app={projectData.rpgIdeator.appLink}
-                repo={projectData.rpgIdeator.repoLink}
+        <Grid container>
+            <Grid>
 
-            />
+                <Grid item md={2}></Grid>
+
+                <Grid item md={10}>
+                    <ProjectCard className={classes.root}
+                        pic={projectData.rpgIdeator.picture}
+                        title={projectData.rpgIdeator.heading}
+                        projectName={projectData.rpgIdeator.projectTitle}
+                        description={projectData.rpgIdeator.description}
+                        app={projectData.rpgIdeator.appLink}
+                        repo={projectData.rpgIdeator.repoLink}
+
+                    />
+                
+
+                
+                    <ProjectCard className={classes.root}
+                        pic={projectData.rpgIdeator.picture}
+                        title={projectData.rpgIdeator.heading}
+                        projectName={projectData.rpgIdeator.projectTitle}
+                        description={projectData.rpgIdeator.description}
+                        app={projectData.rpgIdeator.appLink}
+                        repo={projectData.rpgIdeator.repoLink}
+
+                    />
+                </Grid>
+                <Grid item md={2}></Grid>
+            </Grid>
+
+            <Grid>
+                <Grid item md={2}></Grid>
+
+                <Grid item md={10}>
+                <ProjectCard className={classes.root}
+                    pic={projectData.rpgIdeator.picture}
+                    title={projectData.rpgIdeator.heading}
+                    projectName={projectData.rpgIdeator.projectTitle}
+                    description={projectData.rpgIdeator.description}
+                    app={projectData.rpgIdeator.appLink}
+                    repo={projectData.rpgIdeator.repoLink}
+
+                />
+                
+                <ProjectCard className={classes.root}
+                    pic={projectData.rpgIdeator.picture}
+                    title={projectData.rpgIdeator.heading}
+                    projectName={projectData.rpgIdeator.projectTitle}
+                    description={projectData.rpgIdeator.description}
+                    app={projectData.rpgIdeator.appLink}
+                    repo={projectData.rpgIdeator.repoLink}
+
+                />
+                </Grid>
+            </Grid>
         
             <SideFooter />
         </Grid>
