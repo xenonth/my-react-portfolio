@@ -16,8 +16,8 @@ const headersData = [
     href: "/home",
   },
   {
-    label: "about",
-    href: "/about",
+    label: "portfolio",
+    href: "/portfolio",
   },
   {
     label: "contact",

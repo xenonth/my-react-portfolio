@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 
 //import page files 
 import Home from './pages/Home';
+import Projects from './pages/Projects'
 
 
 //components which sit outside the main page
@@ -17,6 +18,7 @@ function App() {
       <Header />
         <Route exact path ="/" component={Home} />
         <Route exact path ="/home" component={Home} />
+        <Route exact path ="/portfolio" component={Projects} />
     </Router>
   );
 }
