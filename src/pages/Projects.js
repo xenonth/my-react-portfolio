@@ -5,22 +5,20 @@ import SideFooter from '../components/Side-Footer';
 
 import ProjectCard from '../components/ProjectCard';
 
+
+//importing project data from file modules
+import rpgIdeator from '../components/projectData/rpgIdeator'
+import WorkoutData from '../components/projectData/workout'
+//import freshVeg from '../components/projectData/freshVeg'
+//import covid19travel from '../components/projectData/covid19travel'
+
+
 //import material UI components
 import Grid from '@material-ui/core/Grid';
 
 //material UI styling
 import {makeStyles} from '@material-ui/core/styles';
-
-const projectData = {
-    rpgIdeator: {
-        picture: '',
-        heading: "rpg-Idea",
-        projectTitle: "RPG Ideator",
-        description: "A tool for authors and game masters to assist in the development of their world building.",
-        appLink: "https://rpg-ideator.herokuapp.com",
-        repoLink: "https://github.com/xenonth/rpg-planner",
-    },
-} 
+    
 const useStyles = makeStyles(() => ({
     root: {
         background: 'black',
@@ -29,7 +27,7 @@ const useStyles = makeStyles(() => ({
 }))
 
 function Projects () {
-    const classes = useStyles();
+    const classes = useStyles()
 
 
     return (
@@ -40,24 +38,22 @@ function Projects () {
 
                 <Grid item md={10}>
                     <ProjectCard className={classes.root}
-                        pic={projectData.rpgIdeator.picture}
-                        title={projectData.rpgIdeator.heading}
-                        projectName={projectData.rpgIdeator.projectTitle}
-                        description={projectData.rpgIdeator.description}
-                        app={projectData.rpgIdeator.appLink}
-                        repo={projectData.rpgIdeator.repoLink}
+                        pic={rpgIdeator.picture}
+                        title={rpgIdeator.heading}
+                        projectName={rpgIdeator.projectTitle}
+                        description={rpgIdeator.description}
+                        app={rpgIdeator.appLink}
+                        repo={rpgIdeator.repoLink}
 
                     />
-                
-
-                
+                                
                     <ProjectCard className={classes.root}
-                        pic={projectData.rpgIdeator.picture}
-                        title={projectData.rpgIdeator.heading}
-                        projectName={projectData.rpgIdeator.projectTitle}
-                        description={projectData.rpgIdeator.description}
-                        app={projectData.rpgIdeator.appLink}
-                        repo={projectData.rpgIdeator.repoLink}
+                        pic={WorkoutData.picture}
+                        title={WorkoutData.heading}
+                        projectName={WorkoutData.projectTitle}
+                        description={WorkoutData.description}
+                        app={WorkoutData.appLink}
+                        repo={WorkoutData.repoLink}
 
                     />
                 </Grid>
@@ -68,25 +64,7 @@ function Projects () {
                 <Grid item md={2}></Grid>
 
                 <Grid item md={10}>
-                <ProjectCard className={classes.root}
-                    pic={projectData.rpgIdeator.picture}
-                    title={projectData.rpgIdeator.heading}
-                    projectName={projectData.rpgIdeator.projectTitle}
-                    description={projectData.rpgIdeator.description}
-                    app={projectData.rpgIdeator.appLink}
-                    repo={projectData.rpgIdeator.repoLink}
-
-                />
-                
-                <ProjectCard className={classes.root}
-                    pic={projectData.rpgIdeator.picture}
-                    title={projectData.rpgIdeator.heading}
-                    projectName={projectData.rpgIdeator.projectTitle}
-                    description={projectData.rpgIdeator.description}
-                    app={projectData.rpgIdeator.appLink}
-                    repo={projectData.rpgIdeator.repoLink}
-
-                />
+          
                 </Grid>
             </Grid>
         
