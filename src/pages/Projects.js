@@ -9,7 +9,7 @@ import ProjectCard from '../components/ProjectCard';
 //importing project data from file modules
 import rpgIdeator from '../components/projectData/rpgIdeator'
 import WorkoutData from '../components/projectData/workout'
-//import freshVeg from '../components/projectData/freshVeg'
+import freshVeg from '../components/projectData/freshVeg'
 import covid19travel from '../components/projectData/covid19Planner'
 
 
@@ -63,6 +63,16 @@ function Projects () {
                 <Grid item md={2}></Grid>
 
                 <Grid item md={10}>
+
+                <ProjectCard className={classes.root}
+                        pic={freshVeg.picture}
+                        title={freshVeg.heading}
+                        projectName={freshVeg.projectTitle}
+                        description={freshVeg.description}
+                        app={freshVeg.appLink}
+                        repo={freshVeg.repoLink}
+                    />
+
                 <ProjectCard className={classes.root}
                         pic={covid19travel.picture}
                         title={covid19travel.heading}

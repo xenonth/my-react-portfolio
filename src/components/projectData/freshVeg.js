@@ -1,10 +1,12 @@
+import freshPic from "./freshVeg.jpg";
+
 const freshVeg = {
-    picture: '',
-    heading: "rpg-Idea",
-    projectTitle: "RPG Ideator",
-    description: "A tool for authors and game masters to assist in the development of their world building.",
-    appLink: "https://rpg-ideator.herokuapp.com",
-    repoLink: "https://github.com/xenonth/rpg-planner",
+    picture: freshPic,
+    heading: "fresh-veg",
+    projectTitle: "FreshVeg",
+    description: "A service to deliver farm fresh produce straight to the user's door.",
+    appLink: "https://afternoon-waters-14450.herokuapp.com",
+    repoLink: "https://github.com/Ningthangom/FreshVeg",
 } 
 
 export default freshVeg;

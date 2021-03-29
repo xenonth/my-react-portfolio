@@ -1,4 +1,5 @@
 
+import myResume from './../TIMOTHY-ALEXANDER-FORBES-resume.pdf';
 import React from 'react';
 
 //Link to a google drive doc would be the easiest solution.
@@ -8,7 +9,7 @@ function DownloadResume() {
         <button >
       
             <a 
-                href="/public/TIMOTHY-ALEXANDER-FORBES-resume.pdf"
+                href={myResume}
                 target="_blank"
                 rel="noreferrer"
                 download="TIMOTHY-FORBES-resume"
