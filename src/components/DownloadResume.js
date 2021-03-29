@@ -1,21 +1,21 @@
 
 import React from 'react';
 
-//import material UI button
-import Button from '@material-ui/core/Button';
+//Link to a google drive doc would be the easiest solution.
 
 function DownloadResume() {
     return (
-        <Button  variant="contained" color="primary">
+        <button >
       
             <a 
-                href="../assets/TIMOTHY-ALEXANDER-FORBES-resume.pdf" 
-                target="_blank" 
+                href="/public/TIMOTHY-ALEXANDER-FORBES-resume.pdf"
+                target="_blank"
+                rel="noreferrer"
                 download="TIMOTHY-FORBES-resume"
             >
                 RESUME
             </a> 
-        </Button>
+        </button>
 
     )
 }

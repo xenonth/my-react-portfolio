@@ -10,7 +10,7 @@ import ProjectCard from '../components/ProjectCard';
 import rpgIdeator from '../components/projectData/rpgIdeator'
 import WorkoutData from '../components/projectData/workout'
 //import freshVeg from '../components/projectData/freshVeg'
-//import covid19travel from '../components/projectData/covid19travel'
+import covid19travel from '../components/projectData/covid19Planner'
 
 
 //import material UI components
@@ -54,7 +54,6 @@ function Projects () {
                         description={WorkoutData.description}
                         app={WorkoutData.appLink}
                         repo={WorkoutData.repoLink}
-
                     />
                 </Grid>
                 <Grid item md={2}></Grid>
@@ -64,6 +63,14 @@ function Projects () {
                 <Grid item md={2}></Grid>
 
                 <Grid item md={10}>
+                <ProjectCard className={classes.root}
+                        pic={covid19travel.picture}
+                        title={covid19travel.heading}
+                        projectName={covid19travel.projectTitle}
+                        description={covid19travel.description}
+                        app={covid19travel.appLink}
+                        repo={covid19travel.repoLink}
+                    />
           
                 </Grid>
             </Grid>

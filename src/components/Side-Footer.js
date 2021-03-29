@@ -1,9 +1,9 @@
+import DownloadResume from './DownloadResume';
 import React from 'react';
 
 //import social links.
 import SocialLinks from './SocialLinks';
 
-import DownloadResume from './DownloadResume';
 
 //useStyles for footer background to remain at the bottom
 import Box from '@material-ui/core/Box';
