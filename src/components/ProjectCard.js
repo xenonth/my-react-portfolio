@@ -7,18 +7,27 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+
+import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
 
 //Material UI styling
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
-    justifyContent: "center",
+    margin: "2%"
     
   },
   media: {
-    height: 140,
+    height: 200,
+  },
+  linkButton: {
+    textAlign: "center",
+    backgroundColor: "#4CAF50",
+    border: "none",
+    color: "white",
+    padding: "15px 32px",
+    fontSize: "16px",
   },
 });
 
@@ -48,19 +57,19 @@ function ProjectCard (props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <CardActions  className={classes.linkButton}>
 
-            <button>
+            <Button variant="contained" color="primary" disableElevation justify="center">
                 <a href={app} target="_blank" rel="noreferrer">
                     Application
                 </a>
-            </button>
+            </Button>
 
-            <button>
+            <Button variant="contained" color="primary" disableElevation justify="center">
                 <a href={repo} target="_blank" rel="noreferrer">
                     Repository
                 </a>
-            </button>
+            </Button>
       </CardActions>
     </Card>
   );

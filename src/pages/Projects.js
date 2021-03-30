@@ -23,7 +23,11 @@ const useStyles = makeStyles(() => ({
     root: {
         background: 'black',
         color: 'white',
+        direction: "column",
+        alignItems: "center",
+        justify: "center",
     },
+    
 }))
 
 function Projects () {
@@ -31,12 +35,9 @@ function Projects () {
 
 
     return (
-        <Grid container>
-            <Grid>
-
-                <Grid item md={2}></Grid>
-
-                <Grid item md={10}>
+        <Grid container spacing={0}>
+            
+                <Grid item xs={12} sm={6}>
                     <ProjectCard className={classes.root}
                         pic={rpgIdeator.picture}
                         title={rpgIdeator.heading}
@@ -46,7 +47,8 @@ function Projects () {
                         repo={rpgIdeator.repoLink}
 
                     />
-                                
+                </Grid>
+                <Grid item xs={12} sm={6}>         
                     <ProjectCard className={classes.root}
                         pic={WorkoutData.picture}
                         title={WorkoutData.heading}
@@ -56,13 +58,8 @@ function Projects () {
                         repo={WorkoutData.repoLink}
                     />
                 </Grid>
-                <Grid item md={2}></Grid>
-            </Grid>
 
-            <Grid>
-                <Grid item md={2}></Grid>
-
-                <Grid item md={10}>
+                <Grid item xs={12} sm={6}>
 
                 <ProjectCard className={classes.root}
                         pic={freshVeg.picture}
@@ -72,6 +69,8 @@ function Projects () {
                         app={freshVeg.appLink}
                         repo={freshVeg.repoLink}
                     />
+                    </Grid>
+                <Grid item xs={12} sm={6}>
 
                 <ProjectCard className={classes.root}
                         pic={covid19travel.picture}
@@ -83,7 +82,6 @@ function Projects () {
                     />
           
                 </Grid>
-            </Grid>
         
             <SideFooter />
         </Grid>
