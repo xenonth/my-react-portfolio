@@ -1,4 +1,4 @@
-import covidPlanner from './covidPlanner.png'
+import covidPlanner from './safeTravel.jpg'
 const covid19travel = {
     picture: covidPlanner,
     heading: "covid-19",

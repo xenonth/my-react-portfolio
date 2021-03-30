@@ -1,5 +1,7 @@
+ import ideator from './ideator.jpg';
+ 
  const rpgIdeator = {
-    picture: '',
+    picture: ideator,
     heading: "rpg-Idea",
     projectTitle: "RPG Ideator",
     description: "A tool for authors and game masters to assist in the development of their world building.",

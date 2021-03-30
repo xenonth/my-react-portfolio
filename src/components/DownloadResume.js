@@ -3,10 +3,11 @@ import myResume from './../TIMOTHY-ALEXANDER-FORBES-resume.pdf';
 import React from 'react';
 
 //Link to a google drive doc would be the easiest solution.
+import Button from '@material-ui/core/Button'
 
 function DownloadResume() {
     return (
-        <button >
+        <Button variant="contained" color="primary" disableElevation>
       
             <a 
                 href={myResume}
@@ -16,7 +17,7 @@ function DownloadResume() {
             >
                 RESUME
             </a> 
-        </button>
+        </Button>
 
     )
 }

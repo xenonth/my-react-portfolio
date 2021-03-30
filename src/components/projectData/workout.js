@@ -1,4 +1,4 @@
-import WorkoutPic from "./workout.png"
+import WorkoutPic from "./workout.jpeg"
 
 const WorkoutData = {
     picture: WorkoutPic,
