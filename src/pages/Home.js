@@ -2,6 +2,7 @@ import React from 'react';
 
 //import who I am statements for home webpage in order of display
 import Intro from '../components/Intro';
+import parliPic from './parliament.jpg';
 
 import Life from '../components/Life';
 
@@ -16,28 +17,27 @@ import Box from '@material-ui/core/Box';
 //material UI styling
 import {makeStyles} from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles(() => ({
     root: {
         background: 'black',
         color: 'white',
     },
 }))
-
+const picAlt = "Parliament Speech"
 
 function Home() {
     const classes = useStyles();
+        
+
     return (
         <Grid container>
             <Grid item md={1}></Grid>
 
-            <Grid item md={10}>
-                <Paper className={classes.root}>
-                    <Intro />
-                </Paper>
-            
-               
-                
+            <Grid item md={10} xs={12}>
+                    
+                <Box component="div" display="inline" p={1}>
+                    <Intro picLink={parliPic} alt={picAlt}/>
+                </Box>
 
                 <Paper className={classes.root}> 
                     <Life />
