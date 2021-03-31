@@ -37,6 +37,7 @@ function ProjectCard (props) {
   const title = props.title;
   const projectName = props.projectName;
   const description = props.description;
+  const technologies= props.technologies
   const app = props.app;
   const repo = props.repo;
 
@@ -52,8 +53,12 @@ function ProjectCard (props) {
           <Typography gutterBottom variant="h5" component="h2">
             {projectName}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" component="p">
             {description}
+          </Typography>
+          <br></br>
+          <Typography variant="body2" component="p">
+            Technologies: {technologies}
           </Typography>
         </CardContent>
       </CardActionArea>

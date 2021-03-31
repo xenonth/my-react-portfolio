@@ -45,6 +45,7 @@ function Projects () {
                         description={rpgIdeator.description}
                         app={rpgIdeator.appLink}
                         repo={rpgIdeator.repoLink}
+                        technologies={rpgIdeator.technologies}
 
                     />
                 </Grid>
@@ -56,6 +57,7 @@ function Projects () {
                         description={WorkoutData.description}
                         app={WorkoutData.appLink}
                         repo={WorkoutData.repoLink}
+                        technologies={WorkoutData.technologies}
                     />
                 </Grid>
 
@@ -68,6 +70,7 @@ function Projects () {
                         description={freshVeg.description}
                         app={freshVeg.appLink}
                         repo={freshVeg.repoLink}
+                        technologies={freshVeg.technologies}
                     />
                     </Grid>
                 <Grid item xs={12} sm={6}>
@@ -79,6 +82,7 @@ function Projects () {
                         description={covid19travel.description}
                         app={covid19travel.appLink}
                         repo={covid19travel.repoLink}
+                        technologies={covid19travel.technologies}
                     />
           
                 </Grid>

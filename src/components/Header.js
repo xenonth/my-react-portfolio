@@ -43,12 +43,16 @@ const useStyles = makeStyles(() => ({
 drawerContainer: {
   padding: "20px 30px",
 },
+
+appBar: {
+  backgroundColor: "1F363D", 
+},
 }));
 
 function Header() {
   
   //css styles for header
-  const {header, menuButton, toolbar, drawerContainer} = useStyles();
+  const {header, menuButton, toolbar, drawerContainer, appBar} = useStyles();
   
   const [state, setState] = useState({
     mobileView: false,
@@ -148,7 +152,7 @@ const { mobileView, drawerOpen } = state;
 
     return (
       <header className={header}>
-        <AppBar position="sticky">{mobileView ? displayMobile() : displayDesktop()}</AppBar>
+        <AppBar className={appBar} position="sticky">{mobileView ? displayMobile() : displayDesktop()}</AppBar>
       </header>
     );
 }
