@@ -3,6 +3,8 @@ import React from 'react';
 //import Intro string statement from text file
 import IntroText from './text/IntroText';
 
+import DreamText from './text/DreamText';
+
 //useStyles for footer background to remain at the bottom
 import {makeStyles} from "@material-ui/core/styles"
 
@@ -23,6 +25,7 @@ function Intro() {
            </h3>
 
            <IntroText />
+           <DreamText />
         </div>
     )
 }

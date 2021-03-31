@@ -3,8 +3,6 @@ import React from 'react';
 //import who I am statements for home webpage in order of display
 import Intro from '../components/Intro';
 
-import Dream from '../components/Dream';
-
 import Life from '../components/Life';
 
 //social Link and Resume buttons to be placed on side above md, and at bottom below md
@@ -38,12 +36,7 @@ function Home() {
                     <Intro />
                 </Paper>
             
-            
-            
-                <Paper className={classes.root}>
-                    <Dream />
-                </Paper>
-                
+               
                 
 
                 <Paper className={classes.root}> 
