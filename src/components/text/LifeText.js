@@ -26,8 +26,7 @@ function LifeText() {
                     Tools: Express, React, Node, Handlebars, Query, Bootstrap, Material UI
                 </li>
             </ul>
-            
-            Five years combined experience in Aviation across justice culture theory, threat and error management, safety management systems, pilot training and frontline groundhandling experience.  Additionally, organisation, management and teamwork experience from extracurricular activities and voluntary roles.            
+                        
         </Box>
     )
 }

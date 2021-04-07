@@ -1,44 +1,34 @@
 import React from 'react';
 
 //social Link and Resume buttons at bottom of screen
-import SideFooter from '../components/Side-Footer';
 
-import ProjectCard from '../components/ProjectCard';
+
+import ProjectCard from './ProjectCard';
 
 
 //importing project data from file modules
-import rpgIdeator from '../components/projectData/rpgIdeator'
-import WorkoutData from '../components/projectData/workout'
-import freshVeg from '../components/projectData/freshVeg'
-import covid19travel from '../components/projectData/covid19Planner'
+import rpgIdeator from './projectData/rpgIdeator'
+import WorkoutData from './projectData/workout'
+import freshVeg from './projectData/freshVeg'
+import covid19travel from './projectData/covid19Planner'
 
 
 //import material UI components
 import Grid from '@material-ui/core/Grid';
 
-//material UI styling
-import {makeStyles} from '@material-ui/core/styles';
-    
-const useStyles = makeStyles(() => ({
-    root: {
-        background: 'black',
-        color: 'white',
-        direction: "column",
-        alignItems: "center",
-        justify: "center",
-    },
-    
-}))
 
+//pic 1 pc 2 pic 3 on hover rotate between pictures!!
+//material UI styling
+
+    
 function Projects () {
-    const classes = useStyles()
 
 
     return (
         <Grid container spacing={0}>
             
                 <Grid item xs={12} sm={6}>
-                    <ProjectCard className={classes.root}
+                    <ProjectCard   
                         pic={rpgIdeator.picture}
                         title={rpgIdeator.heading}
                         projectName={rpgIdeator.projectTitle}
@@ -50,7 +40,7 @@ function Projects () {
                     />
                 </Grid>
                 <Grid item xs={12} sm={6}>         
-                    <ProjectCard className={classes.root}
+                    <ProjectCard  
                         pic={WorkoutData.picture}
                         title={WorkoutData.heading}
                         projectName={WorkoutData.projectTitle}
@@ -63,7 +53,7 @@ function Projects () {
 
                 <Grid item xs={12} sm={6}>
 
-                <ProjectCard className={classes.root}
+                <ProjectCard  
                         pic={freshVeg.picture}
                         title={freshVeg.heading}
                         projectName={freshVeg.projectTitle}
@@ -75,7 +65,7 @@ function Projects () {
                     </Grid>
                 <Grid item xs={12} sm={6}>
 
-                <ProjectCard className={classes.root}
+                <ProjectCard  
                         pic={covid19travel.picture}
                         title={covid19travel.heading}
                         projectName={covid19travel.projectTitle}
@@ -86,8 +76,6 @@ function Projects () {
                     />
           
                 </Grid>
-        
-            <SideFooter />
         </Grid>
     )
     

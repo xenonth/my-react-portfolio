@@ -3,6 +3,7 @@ import React from 'react';
 
 //import social links.
 import SocialLinks from './SocialLinks';
+import ScrollToTop from './ScrollToTop';
 
 
 //useStyles for footer background to remain at the bottom
@@ -27,6 +28,7 @@ function SideFooter() {
                 <Box p={1}>
                     <DownloadResume />
                 </Box>
+                <ScrollToTop />
             </footer>
     )
 }

@@ -5,6 +5,8 @@ import { AppBar, Toolbar, makeStyles, Button, IconButton,
   Drawer, Link, MenuItem,} from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 
+//ScrollToTop feature
+import ScrollToTop from './ScrollToTop';
 
 //for React link navigation
 import { Link as RouterLink } from "react-router-dom";
@@ -17,11 +19,11 @@ const headersData = [
   },
   {
     label: "portfolio",
-    href: "/portfolio",
+    href: "portfolio",
   },
   {
     label: "contact",
-    href: "/contact",
+    href: "contact",
   },
 ];
 
@@ -152,7 +154,9 @@ const { mobileView, drawerOpen } = state;
 
     return (
       <header className={header}>
+        
         <AppBar className={appBar} position="sticky">{mobileView ? displayMobile() : displayDesktop()}</AppBar>
+        <ScrollToTop />
       </header>
     );
 }
