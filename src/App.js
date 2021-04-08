@@ -1,7 +1,9 @@
 import React from 'react';
 
 //import page files 
-import Home from './pages/Home';
+//import Home from './pages/Home';
+
+import MiddleSection from './pages/MiddleSection'
 
 import SideFooter from './components/Side-Footer'
 
@@ -17,7 +19,7 @@ function App() {
 
       <NavBar />
       
-        <Home />
+        <MiddleSection />
 
         <SideFooter />
       
