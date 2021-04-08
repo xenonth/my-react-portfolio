@@ -28,7 +28,6 @@ function SideFooter() {
                 <Box p={1}>
                     <DownloadResume />
                 </Box>
-                <ScrollToTop />
             </footer>
     )
 }

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowAltCircleUp} from '@fortawesome/free-regular-svg-icons';
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -29,10 +32,7 @@ export default function ScrollToTop() {
     <div className="scroll-to-top">
       {isVisible && (
         <div onClick={scrollToTop}>
-          <img
-            src="https://i.postimg.cc/44Ytsk8Z/top-arrow-emoj.png"
-            alt="Go to top"
-          />
+          <FontAwesomeIcon icon={faArrowAltCircleUp} />
         </div>
       )}
     </div>
