@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //import material UI Components
 
@@ -20,6 +20,9 @@ const useStyles = makeStyles({
   },
   media: {
     height: 200,
+    '&:hover': {
+      opacity: 0.0,
+    }
   },
   linkButton: {
     textAlign: "center",
@@ -33,6 +36,23 @@ const useStyles = makeStyles({
 
 function ProjectCard (props) {
   const classes = useStyles();
+  const [showComponent, setShowComponent] = useState(false);
+
+  //on hover set component to true
+  const handleToggleHoverIn = (event) => {
+    event.preventDefault();
+    setShowComponent(true);
+  };
+
+  //off hover set component to false
+  const handleToggleHoverOut = (event) => {
+    event.preventDefault();
+    setShowComponent(false);
+  };
+
+  console.log("The state showComponent value is ", showComponent);
+
+  //prop setting
   const pic = props.pic;
   const title = props.title;
   const projectName = props.projectName;
@@ -42,13 +62,22 @@ function ProjectCard (props) {
   const repo = props.repo;
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root}
+    onMouseEnter={handleToggleHoverIn}
+    onMouseLeave={handleToggleHoverOut}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={pic}
           title={title}
         />
+        {showComponent ? (
+          <>
+            <div >
+              <Typography>Hover Test</Typography>
+            </div>
+              </>
+            ) : null}
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {projectName}
