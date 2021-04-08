@@ -27,6 +27,7 @@ function Projects () {
                     <ProjectCard   
                         pic={rpgIdeator.picture}
                         title={rpgIdeator.heading}
+                        hoverPic={rpgIdeator.hoverPic}
                         projectName={rpgIdeator.projectTitle}
                         description={rpgIdeator.description}
                         app={rpgIdeator.appLink}
