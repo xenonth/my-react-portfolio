@@ -1,8 +1,10 @@
-import WorkoutPic from "./workout.jpeg"
+import WorkoutPic from "./workout.jpeg";
+import WorkoutSite from "./workout.png";
 
 const WorkoutData = {
     picture: WorkoutPic,
     heading: "workout",
+    hoverPic: WorkoutSite,
     projectTitle: "Exercise App",
     description: "A workout aplication utilising MongoDB and to record and save the users workout.",
     technologies: "JavaScript ES6+, MongoDB, Mongoose, Bootstrap, Heroku",

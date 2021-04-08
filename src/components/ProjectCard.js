@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     height: 200,
     '&:hover': {
       opacity: 0.0,
-    }
+  }
+
   },
   linkButton: {
     textAlign: "center",
@@ -42,6 +43,7 @@ function ProjectCard (props) {
   const handleToggleHoverIn = (event) => {
     event.preventDefault();
     setShowComponent(true);
+
   };
 
   //off hover set component to false
@@ -54,6 +56,7 @@ function ProjectCard (props) {
 
   //prop setting
   const pic = props.pic;
+  const hoverPic = props.hoverPic;
   const title = props.title;
   const projectName = props.projectName;
   const description = props.description;
@@ -62,22 +65,25 @@ function ProjectCard (props) {
   const repo = props.repo;
 
   return (
-    <Card className={classes.root}
-    onMouseEnter={handleToggleHoverIn}
-    onMouseLeave={handleToggleHoverOut}>
+    <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
+            onMouseEnter={handleToggleHoverIn}
+            onMouseLeave={handleToggleHoverOut}
           className={classes.media}
           image={pic}
           title={title}
-        />
-        {showComponent ? (
-          <>
-            <div >
-              <Typography>Hover Test</Typography>
-            </div>
-              </>
-            ) : null}
+          />
+                  {showComponent ? (
+            <>
+              <div >
+                <CardMedia 
+                  component="img"
+                  image={hoverPic}
+                />
+              </div>
+                </>
+              ) : null}
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {projectName}
