@@ -8,15 +8,16 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button'
+import Link from "@material-ui/core/Link";
 import Typography from '@material-ui/core/Typography';
 
 //Material UI styling
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   root: {
-    margin: "2%"
-    
+    margin: "2%",
   },
   media: {
     height: 200,
@@ -29,10 +30,14 @@ const useStyles = makeStyles({
     textAlign: "center",
     backgroundColor: "#4CAF50",
     border: "none",
-    color: "white",
     padding: "15px 32px",
     fontSize: "16px",
+    margin: "auto",
+    display: "block",
   },
+  linkColor: {
+    color: "#FFFFFF"
+  }
 });
 
 function ProjectCard (props) {
@@ -98,18 +103,21 @@ function ProjectCard (props) {
         </CardContent>
       </CardActionArea>
       <CardActions  className={classes.linkButton}>
+      <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
 
             <Button variant="contained" color="primary" disableElevation justify="center">
-                <a href={app} target="_blank" rel="noreferrer">
+                <Link href={app} target="_blank" rel="noreferrer" className={classes.linkColor}>
                     Application
-                </a>
+                </Link>
             </Button>
 
             <Button variant="contained" color="primary" disableElevation justify="center">
-                <a href={repo} target="_blank" rel="noreferrer">
+                <Link href={repo} target="_blank" rel="noreferrer" className={classes.linkColor}>
                     Repository
-                </a>
+                </Link>
             </Button>
+            </ButtonGroup>
+
       </CardActions>
     </Card>
   );

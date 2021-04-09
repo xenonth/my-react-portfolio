@@ -14,13 +14,16 @@ import Typography from '@material-ui/core/Typography';
 
 //Material UI styling
 import { makeStyles } from '@material-ui/core/styles';
+
 const useStyles = makeStyles({
   root: {
-    margin: "2%"
-    
+    margin: "2%",
   },
   media: {
-    height: 200,
+    maxHeight: 200,
+    maxWidth: 340,
+    margin: "auto",
+    display: "block",
   },
   linkButton: {
     textAlign: "center",
@@ -29,13 +32,18 @@ const useStyles = makeStyles({
     color: "white",
     padding: "15px 32px",
     fontSize: "16px",
+
   },
+  header: {
+    textAlign: "center",
+  }
 });
 
 function IntroCard (props) {
   const classes = useStyles();
   const pic = props.pic;
   const title = props.title;
+  const alternate = props.alternate;
   const intro = props.intro
   const description = props.description;
 
@@ -44,11 +52,13 @@ function IntroCard (props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={pic}
+          component="img"
+          src={pic}
           title={title}
+          alt={alternate}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
             {intro}
           </Typography>
           <Typography variant="body2" component="p">
