@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# my-react-portfolio
+A simple React.js web application to promote my work utilising material UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Table of Contents
 
-## Available Scripts
+* [Description](#User_Story)
+* [Purpose](#Purpose)
+* [Usage](#Usage)
+* [Installation](#Installation)
+* [Instruction](#Instruction)
+* [License](#License)
+* [Testing](#Testing)
+* [Troubleshooting](#Troubleshooting)
+* [Application](#Application)
+* [Questions](#Questions)
+### License
+[Github License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-In the project directory, you can run:
 
-### `npm start`
+## Purpose
+A more advanced portfolio to demonstrate my ability using React.js as well as promote my other projects for interested employers. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Layout and Features
+Everything is broken down into the following categories components, data files, and sections/'pages'. Components are the templates to plug in desired information.  There are two Card components layout Intro for the about me section and projects layout for displaying all information required about the projects.  The projects card also configured of a hover effect where the intended design was to on hover have the current image dissapear to have another image appear.  Replacement effect was a struggle so I settled on utilising state to show an image of the project appear underneath the existing image.   Lastly are the Sections/pages which is the single page's subparts which was necessary for the internal link's to scroll to desired point which is the starting card(s) of that section.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The original design was going to be like my previous portfolio site but it proved to be more convenient to setup everything on a single webpage.  
 
-### `npm test`
+### Usage
+The application is almost finished and currently undergoing a peer review process but will be live soon.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The [app]() is deployed here
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+If you are a developer Here is a list of the following, technologies and packages required for the application to run without issues locally.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Accounts will need to be created to be able to use certain features on your local server machine:
+* Text Editor
+* Github/Gitlab etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you wish to download the repository and run locally the following programs will need to be installed on your local development computer/server:
+* Node.js
+* React.js
+* text editor i.e. Visual Studio Code
+* Material UI,
+* Font Awesome
 
-### `npm run eject`
+### Instruction
+Once the above is setup locally next type npm start and the program will run locally on localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Troubleshooting
+If nothing is working locally the application is using the App.test.js and upon launch was compiled succesfully.  If you are suffering issues you may not have installed all the packages required for the running of this web application.
