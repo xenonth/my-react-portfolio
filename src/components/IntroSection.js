@@ -53,7 +53,7 @@ function Intro() {
                     intro={<>
                         Other Experience:
                         </>}
-                    description= {"Additionally, I have a stron understanding of justice culture theory, threat and error management and safety management systems."}
+                    description= {"Additionally, I have strong ability and understanding of justice culture theory, threat and error management and safety management systems."}
                 />
 
 
