@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/my-react-portfolio/static/js/main.fbe7cb44.chunk.js",
+    "main.js.map": "/my-react-portfolio/static/js/main.fbe7cb44.chunk.js.map",
+    "runtime-main.js": "/my-react-portfolio/static/js/runtime-main.d63365ab.js",
+    "runtime-main.js.map": "/my-react-portfolio/static/js/runtime-main.d63365ab.js.map",
+    "static/js/2.b2e9b067.chunk.js": "/my-react-portfolio/static/js/2.b2e9b067.chunk.js",
+    "static/js/2.b2e9b067.chunk.js.map": "/my-react-portfolio/static/js/2.b2e9b067.chunk.js.map",
+    "static/js/3.ca23890b.chunk.js": "/my-react-portfolio/static/js/3.ca23890b.chunk.js",
+    "static/js/3.ca23890b.chunk.js.map": "/my-react-portfolio/static/js/3.ca23890b.chunk.js.map",
+    "index.html": "/my-react-portfolio/index.html",
+    "static/js/2.b2e9b067.chunk.js.LICENSE.txt": "/my-react-portfolio/static/js/2.b2e9b067.chunk.js.LICENSE.txt",
+    "static/media/TIMOTHY-ALEXANDER-FORBES-resume.2c12e91d.pdf": "/my-react-portfolio/static/media/TIMOTHY-ALEXANDER-FORBES-resume.2c12e91d.pdf",
+    "static/media/covidPlanner.7d772ae3.png": "/my-react-portfolio/static/media/covidPlanner.7d772ae3.png",
+    "static/media/freshVeg.337a4b58.jpg": "/my-react-portfolio/static/media/freshVeg.337a4b58.jpg",
+    "static/media/freshVeg.bf8fb3fd.png": "/my-react-portfolio/static/media/freshVeg.bf8fb3fd.png",
+    "static/media/ideator.7f6972db.jpg": "/my-react-portfolio/static/media/ideator.7f6972db.jpg",
+    "static/media/rpg.49b41921.png": "/my-react-portfolio/static/media/rpg.49b41921.png",
+    "static/media/safeTravel.bf8b93a1.jpg": "/my-react-portfolio/static/media/safeTravel.bf8b93a1.jpg",
+    "static/media/snapshot.d28f6999.JPG": "/my-react-portfolio/static/media/snapshot.d28f6999.JPG",
+    "static/media/workout.7367b433.png": "/my-react-portfolio/static/media/workout.7367b433.png",
+    "static/media/workout.78374c41.jpeg": "/my-react-portfolio/static/media/workout.78374c41.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d63365ab.js",
+    "static/js/2.b2e9b067.chunk.js",
+    "static/js/main.fbe7cb44.chunk.js"
+  ]
+}
